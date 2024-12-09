@@ -1,0 +1,248 @@
+@import url('https://fonts.google.com/specimen/Hanken+Grotesk');
+
+:root {
+    --clr-primary-900: 0, 100%, 67%;
+    --clr-primary-800: 39, 100%, 56%;
+    --clr-primary-700: 166, 100%, 37%;
+    --clr-primary-600: 234, 85%, 45%;
+    
+
+    --clr-neutral-400: hsl(224, 30%, 27%);
+    --clr-neutral-300: hsl(241, 100%, 89%);
+    --clr-neutral-200: hsl(221, 100%, 96%);
+    --clr-neutral-100: hsl(0, 0%, 100%);
+
+    --gradiant-bg: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    --gradiant-circle: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+
+    --ff-base: 'Hanken Grotesk', sans-serif;
+
+    --fw-bolder: 800;
+    --fw-bold: 700;
+    --fw-base: 500;
+}
+
+/*
+  CSS RESET
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+/***********
+   main Css
+************/
+body {
+    font-size: 18px;
+    font-family: var(--ff-base);
+    font-weight: var(--fw-base);
+}
+
+.section1{
+    background-image: var(--gradiant-bg);
+    border-radius: 0 0 1rem 1rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.section1 h1 {
+    font-weight: var(--ff-base);
+    font-size: 1.2rem;
+    color: var(--clr-neutral-300);
+}
+
+.section1 .global {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    padding: 1rem 0;
+    background-image: var(--gradiant-circle);
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+}
+
+.global span {
+    display: block;
+    font-weight: var(--fw-bolder);
+    font-size: 3rem;
+    color: var(--clr-neutral-100);
+}
+
+.section1 .global{
+    color: var(--clr-neutral-300);
+}
+
+.section1 .text span{
+    display: block;
+    font-weight: var(--fw-bold);
+    font-size: 1.5rem;
+    color: var(--clr-neutral-100);
+}
+
+.section1 .text{
+    color: var(--clr-neutral-300);
+    font-size: 1rem;
+}
+
+.section2 {
+    padding: 2rem;
+    background-color: var(--clr-neutral-100);
+}
+
+.section2 h2 {
+    color: var(--clr-neutral-400);
+    margin-bottom: 1rem;
+}
+
+.section2 .test {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+    padding: 1rem;
+    
+}
+
+.test .type {
+    display: flex;
+    align-items: center;
+}
+
+.type img {
+    margin-right: 1rem;
+}
+
+.test .score {
+    color: var(--clr-neutral-400);
+    font-weight: var(--fw-bold);
+}
+
+.score span {
+    color: var(--clr-neutral-300);
+}
+
+.re {
+    color: hsl(var(--clr-primary-900));
+    background-color: hsla(var(--clr-primary-900), 0.05);
+}
+
+.me {
+    color: hsl(var(--clr-primary-800));
+    background-color: hsla(var(--clr-primary-800), 0.05);
+}
+
+.ve {
+    color: hsl(var(--clr-primary-700));
+    background-color: hsla(var(--clr-primary-700), 0.05);
+}
+
+.vi {
+    color: hsl(var(--clr-primary-600));
+    background-color: hsla(var(--clr-primary-600), 0.05);
+}
+
+.section2 button {
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 2rem;
+    color: var(--clr-neutral-100);
+    background-color: var(--clr-neutral-400);
+    width: 100%;
+}
+
+@media (min-width: 376px) {
+    body {
+        background-color: var(--clr-neutral-200);
+    }
+
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    article {
+        display: flex;
+        background-color: var(--clr-neutral-100);
+        border-radius: 1rem;
+    }
+
+    .section1 {
+        max-width: 50%;
+        border-radius: 1rem;
+    }
+
+    .section2 {
+        width: 50%;
+        border-radius: 1rem;
+    }
+
+    .section2 button:hover {
+        cursor: pointer;
+        background-image: var(--gradiant-bg);
+    }
+}
+ 
+ 

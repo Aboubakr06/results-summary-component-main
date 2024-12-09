@@ -27,7 +27,7 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 ### Links
 
 - Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/)
-- Live Site URL: [Live Site]()
+- Live Site URL: [Live Site](https://verdant-tiramisu-ff600b.netlify.app/)
 
 ## My process
 
